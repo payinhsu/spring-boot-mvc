@@ -1,0 +1,18 @@
+# The name must be changed to artifactId,
+# For an example: poseitech-microservices-simple is artifactId,   
+# spring.applicatin.name must be poseitechMicroserviceSimple
+
+spring:
+   application:
+      name: yoloMemberFafaSignin
+
+# spring profile 設定
+   profiles:
+      active: dev
+   
+# config server 設定
+   cloud:
+      config:
+         uri: http://ec2-35-161-36-208.us-west-2.compute.amazonaws.com:8888/config
+         username: user
+         password: poseitech   

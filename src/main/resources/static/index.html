@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>Static Content Demp Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<p>
+    <form id="myform" method="post" action="/fafaSignin/checkSingIn">
+        <!--<a class="btn btn-default" id="signToAward" href="#" role="button">簽到</a>-->
+        <input type="hidden" id="userId" name="userId">
+        账号:
+        <input type="text" id="userAccount" name="userAccount">
+        <button type="submit" class="btn btn-primary">簽到</button>
+    </form>
+</p>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+//        $("#signToAward").click(function(e) {
+////            $("#userId").val('4');
+////            $("#userAccount").val('aimee9');
+////            $("#userId").val('18');
+////            $("#userAccount").val('ceshi123');
+//            console.log($("#userAccount").val());
+//            $("#myform").submit();
+//        });
+//        $("#myform").on("submit", function (e) {
+//            console.log($("#userAccount").val());
+//        });
+    });
+
+</script>
+</body>
+</html>

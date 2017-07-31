@@ -1,0 +1,8 @@
+<included>      
+	<logger name="com.yolo.member.promotions" additivity="false">
+		<level value="DEBUG" />
+      <appender-ref ref="dailyRollingFileAppender" />
+		<appender-ref ref="minuteRollingFileAppender" />
+		<appender-ref ref="consoleAppender" />
+	</logger>
+</included>

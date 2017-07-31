@@ -1,0 +1,24 @@
+#
+# systemd service file for Poseitech cloud config server
+#
+
+[Unit]
+Description=yolo-member-promotion
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+Alias=poseitechActivtyDailysign.service
+
+[Service]
+UMask=002
+User=poseitech
+Group=poseitech
+ExecStart=/usr/services/poseitech/java/yolo-member-promotion/bin/yoloMemberFafaSignin.jar
+Type=fork
+TimeoutSec=60
+# Use this to switch malloc implementation
+EnvironmentFile=/etc/sysconfig/poseitech/yoloMemberFafaSignin.conf
+SuccessExitStatus=143
+#Restart=on-failure
+#RestartPreventExitStatus=1

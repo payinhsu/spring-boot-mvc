@@ -1,0 +1,474 @@
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+    .boxes {
+        height: 971px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        display: table;
+    }
+
+    #middle {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* for explorer only*/
+    #middle[id] {
+        display: table-cell;
+        vertical-align: middle;
+        position: static;
+    }
+
+    .gotAwardTitle {
+        text-align: center;
+        /*margin:0 auto;*/
+    }
+
+    .awardTitle {
+        background: url(../imgs/awardTitle.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        width: 464px; /*30.67vw;*/
+        height: 366px; /*30.67vh;*/
+        position: absolute;
+        top: calc(50% - 282px);
+        left: calc(50% - 223px);
+        z-index: 2;
+        /*transition: all 4s linear;*/
+        transition-duration: 800ms;
+        transition-delay: 1200ms;
+        opacity: 0;
+        /*transition: opacity 4s;*/
+        display: none;
+    }
+
+    #awardList p {
+        color: #ffe275;
+        /*line-height: 70px;*/
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #memberList p {
+        color: #ffe275;
+        /*line-height: 70px;*/
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #awardTitle p {
+        color: #ffe275;
+        line-height: 30px;
+        margin-top: 153px;
+    }
+
+    #awardSection .title {
+        width: 261px;
+        height: 67px;
+        background: url(../imgs/keylist.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        color: #ffe275;
+        line-height: 70px;
+    }
+
+    .blockS{
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        float: left;
+    }
+
+    #awardSection {
+        width: 600px;
+        height: 600px;
+        margin:0 auto;
+        top: -500px;
+    }
+
+    .showAwardTitle {
+        display: block;
+    }
+
+    .hideAwardTitle {
+        opacity: 1;
+    }
+
+    .closedAwardBox {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/closedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        /*margin-top: calc(50% - 450px);*/
+    }
+
+    .closedAwardBox:active {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/activeClosedbox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+
+    .closedAwardBoxAnimation {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        -webkit-animation: boxAnimation 2500ms cubic-bezier(0.1, 0.1, 0.25, 1) 0s;
+        -moz-animation: boxAnimation 2500ms cubic-bezier(0.1, 0.1, 0.25, 1) 0s;
+        -o-animation: boxAnimation 2500ms cubic-bezier(0.1, 0.1, 0.25, 1) 0s;
+        -ms-animation: boxAnimation 2500ms cubic-bezier(0.1, 0.1, 0.25, 1) 0s;
+        animation: boxAnimation 2500ms cubic-bezier(0.1, 0.1, 0.25, 1) 0s;
+    }
+
+    .closedAwardBoxAnimation1 {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+
+    .closedAwardBoxAnimation2 {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        -webkit-animation: boxAnimation2 2500ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+        -moz-animation: boxAnimation2 2500ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+        -o-animation: boxAnimation2 2500ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+        -ms-animation: boxAnimation2 2500ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+        animation: boxAnimation2 2500ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    }
+
+    .closedAwardBoxAnimation3 {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        animation: boxAnimation3 4s;
+    }
+
+    .closedAwardBoxAnimation4 {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        animation: boxAnimation4 4s;
+    }
+
+    .openedAwardBox {
+        width: 300px;
+        height: 290px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        margin: 0 auto;
+        position: absolute;
+        top: calc(50% - 140px);
+        left: calc(50% - 150px);
+        z-index: 1;
+    }
+
+    #showAwardsection {
+        width: 300px;
+        height: 290px;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes boxAnimation {
+        from {
+            width: 225px;
+            height: 214px;
+            background: url(../imgs/closedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            z-index: 1;
+        }
+        to {
+            width: 300px;
+            height: 290px;
+            background: url(../imgs/openedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            margin: 0 auto;
+            position: absolute;
+            top: calc(50% - 140px);
+            left: calc(50% - 150px);
+            z-index: 1;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes boxAnimation {
+        from {
+            width: 225px;
+            height: 214px;
+            background: url(../imgs/closedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            z-index: 1;
+        }
+        to {
+            width: 300px;
+            height: 290px;
+            background: url(../imgs/openedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            margin: 0 auto;
+            position: absolute;
+            top: calc(50% - 240px);
+            left: calc(50% - 150px);
+            z-index: 1;
+
+        }
+    }
+
+    @-moz-keyframes boxAnimation1 {
+        from {
+            width: 225px;
+            height: 214px;
+            background: url(../imgs/closedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            position: absolute;
+            top: calc(50% - 350px);
+            left: calc(5%);
+            z-index: 1;
+        }
+        to {
+            width: 300px;
+            height: 290px;
+            background: url(../imgs/openedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            margin: 0 auto;
+            position: absolute;
+            top: calc(50% - 650px);
+            left: calc(50% - 150px);
+            z-index: 1;
+        }
+    }
+
+    @-moz-keyframes boxAnimation2 {
+        from
+            /*{*/
+            /*width: 225px;*/
+            /*height: 214px;*/
+            /*background: url(../imgs/closedBox.png) no-repeat;*/
+            /*-webkit-background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*background-size: cover;*/
+            /*cursor: pointer;*/
+            /*position: absolute;*/
+            /*top: calc(50% - 350px);*/
+            /*left: calc(50% - 750px);*/
+            /*z-index: 1;*/
+            /*}*/
+        {
+            .closedAwardBox
+        }
+        to {
+            width: 300px;
+            height: 290px;
+            background: url(../imgs/openedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: pointer;
+            /*top: calc(50% - 640px);*/
+            /*left: calc(50% - 323px);*/
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    @-moz-keyframes boxAnimation3 {
+        from
+            /*{*/
+            /*width: 225px;*/
+            /*height: 214px;*/
+            /*background: url(../imgs/closedBox.png) no-repeat;*/
+            /*-webkit-background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*background-size: cover;*/
+            /*cursor: pointer;*/
+            /*position: absolute;*/
+            /*top: calc(50% - 350px);*/
+            /*left: calc(50% - 750px);*/
+            /*z-index: 1;*/
+            /*}*/
+        {
+        . closedAwardBox
+        }
+        to {
+            width: 300px;
+            height: 290px;
+            background: url(../imgs/openedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /*cursor: pointer;*/
+            position: absolute;
+            /*display:block;*/
+            top: calc(50% - 540px);
+            left: calc(50% - 550px);
+            z-index: 1;
+        }
+    }
+
+    @-moz-keyframes boxAnimation4 {
+        from
+            /*{*/
+            /*width: 225px;*/
+            /*height: 214px;*/
+            /*background: url(../imgs/closedBox.png) no-repeat;*/
+            /*-webkit-background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*background-size: cover;*/
+            /*cursor: pointer;*/
+            /*position: absolute;*/
+            /*top: calc(50% - 350px);*/
+            /*left: calc(50% - 750px);*/
+            /*z-index: 1;*/
+            /*}*/
+        {
+        . closedAwardBox
+        }
+        to {
+            width: 300px;
+            height: 290px;
+            background: url(../imgs/openedBox.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /*cursor: pointer;*/
+            position: absolute;
+            /*display:block;*/
+            top: calc(50% - 540px);
+            left: calc(50% - 550px);
+            z-index: 1;
+        }
+    }
+
+    .smallerOpenedAwardBox {
+        width: 225px;
+        height: 214px;
+        background: url(../imgs/openedBox.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+
+    .header, .footer {
+        width: 100%;
+        height: 580px;
+        text-align: center;
+        line-height: 480px;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        background: url(../imgs/backgroud.png) no-repeat #000;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+
